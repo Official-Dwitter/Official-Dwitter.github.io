@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift;
+    font-weight: 400;
+}
+
+.topnav {
+    background-color: #e9e9e9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 60px;
+    bottom: 60px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 17px 10px 17px 10px;
+}
+
+.topnav .icon img {
+    float: left;
+}
+
+.search-container {
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover; 
+    float: right;
+    border-radius: 50%;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+  
+.topnav .search-container button{
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+ 
+.topnav .search-container a i{
+    float: right;
+    padding: 6px 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+.center {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form {
+    border: 3px solid #f1f1f1;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.inlog-container {
+    padding: 16px;
+}
+
+.instellingen, .upload {
+    border: 3px solid #ccc;
+    padding: 5px;
+}
+
+.instellingen-info {
+    color: rgb(158, 156, 156);
+}
+
+hr {
+    color: #f1f1f1f1;   
+}
+
+.input, .input-uname, .input-email {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input2 {
+    width: 39%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input3 {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.input4 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input5 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button1 {
+    background-color: #03bebf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2 {
+    background-color: #e21b1b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+span.psw {
+    float: right;
+}
+
+span.psw a {
+    color: rgb(0, 55, 107);
+}
+
+.Aanmelden {
+    text-decoration: none;
+    color: white;
+    background-color: #03bebf;
+    margin-right: 10px;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    /*margin: 17px 10px 17px 10px;*/
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #838383;
+    margin: 10px;
+}
+
+.gebruiker-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #838383;
+    margin: 10px;
+}
+
+.profile-pic:hover {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #838383;
+    margin: 10px;
+    transform: scale(1.01);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 200px;
+    height: 200px;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.overlay i {
+    margin: 90px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 16px;
+}
+
+.voren {
+    margin-left: 20px;
+}
+
+.post {
+    margin: 40px;
+    margin-left: 80px;
+    margin-right: 80px ;
+    background-color: rgb(237, 237, 237);
+}
+
+.postmaken {
+    margin: 40px;
+    margin-left: 80px;
+    margin-right: 80px ;
+    background-color: rgb(237, 237, 237);
+}
+
+.post header {
+    background-color: #03bebf;
+    color: white;
+    padding: 5px;
+}
+
+.postmaken header {
+    background-color: #03bebf;
+    padding: 2px;
+    width: 100%;
+}
+
+.post hr, .postmaken hr {
+    border: 2px solid #007f80;
+    background-color: #007f80;
+    margin-bottom: 5px;
+}
+
+.post p, .postmaken p {
+    padding: 5px;
+}
+
+.post h5, .postmaken h5 {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 10px 5px;
+    padding-bottom: 5px;
+}
+
+.post-search {
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px ;
+    background-color: rgb(237, 237, 237);
+}
+
+.post-search header {
+    background-color: #03bebf;
+    color: white;
+    padding: 5px;
+}
+
+.post-search hr{
+    border: 2px solid #007f80;
+    background-color: #007f80;
+    margin-bottom: 5px;
+}
+
+.post-search p{
+    padding: 5px;
+}
+
+.post-search h5{
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 10px 5px;
+    padding-bottom: 5px;
+}
+
+.newpost {
+    margin-right: 15px;
+    padding: 4px 15px;
+    color: grey;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.inputpost {
+    width: 15%;
+    padding: 6px;
+    margin: 2px;
+    border: 2px solid #007f80;
+    
+}
+
+.inputpostbeschrijving {
+    justify-content: center;
+    width: 98%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 5px;
+}
+
+.newpost2 {
+    margin-right: 15px;
+    padding: 4px 15px;
+    color: grey;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    float: right;
+}
+
+.newpost3 {
+    background-color: white;
+    color: grey;
+    padding: 4px 15px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.verzenden {
+    background-color: white;
+    color: grey;
+    padding: 4px 15px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 99%;
+}
+
+.annuleren {
+    background-color: #cb4141;
+    color: white;
+    padding: 4px 15px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 99%;
+}
+
+
+.topic {
+    background-color: #e9e9e9;
+    border: 1px solid rgb(182, 182, 182);
+    max-width: 70px;
+    padding: 2px 10px 2px 10px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.topic-input {
+    margin: 5px;
+    padding: 3px 10px 2px 10px;
+    border-radius: 25px;
+    border: 1px solid rgb(182, 182, 182);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 120px;
+}
+
+.topic-title {
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.link {
+    font-size: medium;
+    float: right;
+}
+
+.ww-reset {
+    margin-top: 100px;
+}
+
+.error {
+    font-size: small;
+    color: #e21b1b;
+}
+
+.filetoupload {
+    font-family: calibri;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #BBB;
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+.filters {
+    margin-left: 80px;
+}
+
+.filter {
+    background-color: #e9e9e9;
+    border: 1px solid rgb(182, 182, 182);
+    max-width: 70px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.bericht {
+    text-decoration: none;
+    color: white;
+}
+
+.gebruiker {
+    text-decoration: none;
+    color: grey;
+}
+
+.post2 {
+    margin-top: 80px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgb(237, 237, 237);
+}
+
+.post2 header {
+    background-color: #03bebf;
+    color: white;
+    padding: 5px;
+}
+
+.post2 hr {
+    border: 2px solid #007f80;
+    background-color: #007f80;
+    margin-bottom: 5px;
+}
+
+.post2 p {
+    padding: 5px;
+}
+
+.post2 h5 {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 10px 5px;
+    padding-bottom: 5px;
+}
